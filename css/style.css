@@ -9,6 +9,10 @@
    background: #f7f7f7;
  }
 
+ #black{
+   color: #000 !important
+ }
+
  .container_form{
    background: #f86f2d;
    opacity: 0.9;
@@ -30,11 +34,11 @@
    padding: 0% !important;
  }
 
- .not_homepage{
+ /* .not_homepage{ */
 
    /* background: #000000; color:#000000; */
    /* color: #000 !important; */
- }
+ /* } */
 
  .background_customisation{
    max-height: 10% !important;
@@ -7374,9 +7378,15 @@ h1, h2, h3, h4, h5,
     padding-bottom: .9rem;
     padding-left: 20px;
     padding-right: 20px;
-    color: rgba(255, 255, 255, 0.8) !important;
+    color: rgba(255, 255, 255, 0.8);
     font-weight: 400;
     opacity: 1 !important; }
+
+     @media (max-width: 768px) {
+       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link{
+         color: #000 important;
+       }
+     }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
       color: #fff; }
   .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
@@ -7497,13 +7507,15 @@ h1, h2, h3, h4, h5,
       margin-top: 0px;
       -webkit-transition: .3s all ease-out;
       -o-transition: .3s all ease-out;
-      transition: .3s all ease-out; }
+      transition: .3s all ease-out;
+      color: #000 !important;
+     }
     .ftco-navbar-light.scrolled.sleep {
       -webkit-transition: .3s all ease-out;
       -o-transition: .3s all ease-out;
       transition: .3s all ease-out; }
     .ftco-navbar-light.scrolled .navbar-brand {
-      color: #000; }
+      color: #000 !important; }
 
 .navbar-brand {
   font-weight: 700;
