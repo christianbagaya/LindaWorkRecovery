@@ -16,6 +16,8 @@ AOS.init({
 		scrollProperty: 'scroll'
 	});
 
+	var screenWidth = $(window).width();
+
 
 	var fullHeight = function () {
 
@@ -102,9 +104,14 @@ AOS.init({
 				navitem = $('nav-item'),
 				sd = $('.js-scroll-wrap');
 
+			// if (screenWidth < 768) {
+			// 	navbar.removeClass('sleep')
+			// 	navbar.addClass('awake');
+			// }
 			if (st > 150) {
 				if (!navbar.hasClass('scrolled')) {
 					navbar.addClass('scrolled');
+
 				}
 			}
 			if (st < 150) {
